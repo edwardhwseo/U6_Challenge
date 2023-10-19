@@ -1,4 +1,6 @@
 <div class="mx-3">
     <h1>Customers</h1>
+    <p><%= link_to "Customers", root_path, class: "text-decoration-none" %></p>
+    <p><%= link_to "Customers with Missing Email", customers_missing_email_path, class: "text-decoration-none" %></p>
     <%= render partial: 'customer' %>
 </div>
