@@ -1,0 +1,15 @@
+<div class="card-group">
+    <% @customers.each do |c| %>
+            <div class="card" style="width: 18rem;">
+                <% if c.image.present? %>
+                <%= image_tag c.image, class:"card-img-top"%>
+                <% end %>
+                <div class="card-body">
+                    <h5 class="card-title"><%= c.full_name %></h5>
+                    <small>Phone Number</small><p class="card-text"><%= c.phone_number %></p>
+                    <small>Email</small><p class="card-text"><%= c.email_address %></p>
+                    <small>Notes</small><p class="card-text"><%= c.notes %></p>
+                </div>
+            </div>
+    <% end %>
+</div>
